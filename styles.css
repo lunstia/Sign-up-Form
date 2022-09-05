@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.showcase {
+    flex: .5 0 auto;
+    height: 100vh;
+
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+
+main {
+    flex: 1;
+    padding-top: 150px;
+    background-color: whitesmoke;
+}
+
+main > div, form > div {
+    padding-left: 50px;
+}
+
+main > div > h2 {
+    font-weight: 600;
+    padding-right: 150px;
+
+    margin-bottom: 20px;
+}
+
+main > div > h2:nth-child(2) {
+    margin-bottom: 80px;
+}
+
+.input-container {
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 0 2px 5px rgb(139, 139, 139);
+}
+
+.input-container > h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 80px;
+    width: 700px;
+    margin-bottom: 15px;
+}
+
+.container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+
+.container input {
+    padding: 5px;
+    font-size: 18px;
+    width: 300px;
+}
+
+button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 50px;
+    padding: 5px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    background: #596d48;
+
+    border: none;
+    border-radius: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #616d59;
+}
