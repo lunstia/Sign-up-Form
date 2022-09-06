@@ -71,6 +71,20 @@ main > div > h2:nth-child(2) {
     width: 300px;
 }
 
+input:invalid:not(:placeholder-shown), .error {
+    border-color: red;
+    
+}
+
+input:valid {
+    border-color: lightgreen;
+}
+
+.errormsg {
+    color: red;
+    display:none;
+}
+
 button {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -86,13 +100,13 @@ button {
     border-radius: 10px;
 }
 
-span {
+form > div > span {
     font-weight: bold;
     color: rgb(20, 20, 20);
     font-size: 18px;
 }
 
-a {
+form > div > a {
     text-decoration: none;
     color: #616d59;
 }

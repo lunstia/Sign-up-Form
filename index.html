@@ -18,39 +18,40 @@
             <h2>You <em>know</em> you want to...</h2>
         </div>
         
-        <form>
+        <form action="#" method="post">
             <section class="input-container">
                 <h2>Let's do this!</h2>
 
                 <div class="container">
                     <div>
                         <label for="first-name">FIRST NAME</label><br>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <input type="text" id="first-name" name="first-name" placeholder=" " required>
                     </div>
                     <div>
                         <label for="last-name">LAST NAME</label><br>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <input type="text" id="last-name" name="last-name" placeholder=" " required >
                     </div>
                     <div>
                         <label for="email">EMAIL</label><br>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder=" " required>
                     </div>
                     <div>
                         <label for="telephone">PHONE NUMBER</label><br>
-                        <input type="tel" id="telephone" name="telephone" required>
+                        <input type="tel" id="telephone" name="telephone" placeholder=" " required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                     <div>
                         <label for="password">PASSWORD</label><br>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" placeholder=" " required>
                     </div>
                     <div>
                         <label for="password-confirm">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="password-confirm" name="password-confirm" required>
+                        <input type="password" id="password-confirm" name="password-confirm" placeholder=" " required><br>
+                        <span class="errormsg">* Passwords must match</span>
                     </div>
                 </div>
             </section>
             <div>
-                <button type="submit">Create Account</button><br>
+                <button type="submit" id="submit">Create Account</button><br>
                 <span>Already have an account? <a href="#">Log in</a></span>
             </div>
         </form>
